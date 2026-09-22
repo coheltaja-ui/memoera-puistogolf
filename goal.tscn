@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cphsb1s1oe67r"]
+
+[ext_resource type="Texture2D" uid="uid://dsnm4i6tmcx61" path="res://maali.png" id="1_6k3qi"]
+[ext_resource type="Script" uid="uid://bbm28elr1l0e1" path="res://goal2.gd" id="1_p20yd"]
+[ext_resource type="Script" uid="uid://jq3xfck8vpxu" path="res://maali.gd" id="3_gcynx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nl0t0"]
+radius = 557.4199
+
+[node name="Goal" type="Area2D" unique_id=1511073101]
+script = ExtResource("1_p20yd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=603225049]
+position = Vector2(3.8146973e-06, 0)
+scale = Vector2(0.04843765, 0.04843765)
+shape = SubResource("CircleShape2D_nl0t0")
+
+[node name="Maali" type="Sprite2D" parent="." unique_id=2093008066]
+scale = Vector2(0.04843765, 0.04843765)
+texture = ExtResource("1_6k3qi")
+script = ExtResource("3_gcynx")

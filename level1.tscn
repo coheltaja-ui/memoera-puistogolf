@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://dmmrgs877i88a"]
+
+[ext_resource type="PackedScene" uid="uid://c0qx2s8ctsoma" path="res://Player block.tscn" id="1_dopym"]
+[ext_resource type="Texture2D" uid="uid://c2er6k8dtctx8" path="res://simple level.png" id="2_ootpb"]
+[ext_resource type="PackedScene" uid="uid://d17xlnlyr7nur" path="res://golf_ball.tscn" id="3_ootpb"]
+[ext_resource type="PackedScene" uid="uid://cphsb1s1oe67r" path="res://goal.tscn" id="4_v38iq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5wlxq"]
+size = Vector2(1375, 101.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nl0t0"]
+size = Vector2(128, 636.5)
+
+[node name="Level1" type="Node2D" unique_id=216531556]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=621255792]
+position = Vector2(580, 326)
+texture = ExtResource("2_ootpb")
+
+[node name="PlayerBlock" parent="." unique_id=1755181930 instance=ExtResource("1_dopym")]
+position = Vector2(586, 542)
+scale = Vector2(0.8, 0.8)
+
+[node name="Goal" parent="." unique_id=503604563 instance=ExtResource("4_v38iq")]
+position = Vector2(582, 157)
+
+[node name="Golf ball" parent="." unique_id=966036150 instance=ExtResource("3_ootpb")]
+position = Vector2(586, 483)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1364144200]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=959540449]
+visible = false
+offset_left = 234.0
+offset_top = 182.0
+offset_right = 938.0
+offset_bottom = 365.0
+text = "Onnittelut"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=228635236]
+
+[node name="cornerblockerr up down2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1600566571]
+position = Vector2(579.5, 684.375)
+shape = SubResource("RectangleShape2D_5wlxq")
+
+[node name="Cornerblocker" type="CollisionShape2D" parent="StaticBody2D" unique_id=2058808820]
+position = Vector2(-45, 329)
+shape = SubResource("RectangleShape2D_nl0t0")
+
+[node name="cornerblockerr up down" type="CollisionShape2D" parent="StaticBody2D" unique_id=317606212]
+position = Vector2(579, -36)
+shape = SubResource("RectangleShape2D_5wlxq")
+
+[node name="Cornerblocker2" type="CollisionShape2D" parent="StaticBody2D" unique_id=112644632]
+position = Vector2(1203, 323)
+shape = SubResource("RectangleShape2D_nl0t0")
