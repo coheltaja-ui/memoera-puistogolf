@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://7xfdu5ui1rnh"]
+
+[ext_resource type="Texture2D" uid="uid://c2er6k8dtctx8" path="res://simple level.png" id="1_qmr0j"]
+[ext_resource type="PackedScene" uid="uid://c0qx2s8ctsoma" path="res://Player block.tscn" id="2_x2odi"]
+[ext_resource type="PackedScene" uid="uid://cphsb1s1oe67r" path="res://goal.tscn" id="3_8at3q"]
+[ext_resource type="Script" uid="uid://yncn3q2ifjki" path="res://ballbody_2dlvl5.gd" id="4_87x5k"]
+[ext_resource type="Texture2D" uid="uid://c3505t4oxuxs1" path="res://Yellow-Circle-No-Background-180x180-1674396641.png" id="5_yfwe1"]
+[ext_resource type="PackedScene" uid="uid://3unh564pt0x" path="res://obstacle_long.tscn" id="6_x2odi"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_nl0t0"]
+friction = 0.0
+bounce = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nl0t0"]
+radius = 19.026299
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5wlxq"]
+size = Vector2(1375, 101.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nl0t0"]
+size = Vector2(128, 636.5)
+
+[node name="Level5" type="Node2D" unique_id=240650541]
+
+[node name="Level1" type="Node2D" parent="." unique_id=216531556]
+
+[node name="Background" type="Sprite2D" parent="Level1" unique_id=621255792]
+position = Vector2(580, 326)
+texture = ExtResource("1_qmr0j")
+
+[node name="PlayerBlock" parent="Level1" unique_id=1755181930 instance=ExtResource("2_x2odi")]
+position = Vector2(96.00003, 584)
+scale = Vector2(0.8, 0.8)
+
+[node name="Goal" parent="Level1" unique_id=503604563 instance=ExtResource("3_8at3q")]
+position = Vector2(1102, 593)
+
+[node name="Golf ball" type="Node2D" parent="Level1" unique_id=966036150]
+position = Vector2(98, 531)
+
+[node name="Ballbody2d" type="RigidBody2D" parent="Level1/Golf ball" unique_id=368341942]
+physics_material_override = SubResource("PhysicsMaterial_nl0t0")
+script = ExtResource("4_87x5k")
+
+[node name="Sprite2D" type="Sprite2D" parent="Level1/Golf ball/Ballbody2d" unique_id=1890297853]
+scale = Vector2(0.21111111, 0.21111111)
+texture = ExtResource("5_yfwe1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level1/Golf ball/Ballbody2d" unique_id=1322776400]
+shape = SubResource("CircleShape2D_nl0t0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Level1" unique_id=1364144200]
+
+[node name="Label" type="Label" parent="Level1/CanvasLayer" unique_id=959540449]
+visible = false
+offset_left = 234.0
+offset_top = 182.0
+offset_right = 938.0
+offset_bottom = 365.0
+text = "Onnittelut"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Level1" unique_id=228635236]
+
+[node name="cornerblockerr up down2" type="CollisionShape2D" parent="Level1/StaticBody2D" unique_id=1600566571]
+position = Vector2(579.5, 684.375)
+shape = SubResource("RectangleShape2D_5wlxq")
+
+[node name="Cornerblocker" type="CollisionShape2D" parent="Level1/StaticBody2D" unique_id=2058808820]
+position = Vector2(-45, 329)
+shape = SubResource("RectangleShape2D_nl0t0")
+
+[node name="cornerblockerr up down" type="CollisionShape2D" parent="Level1/StaticBody2D" unique_id=317606212]
+position = Vector2(579, -36)
+shape = SubResource("RectangleShape2D_5wlxq")
+
+[node name="Cornerblocker2" type="CollisionShape2D" parent="Level1/StaticBody2D" unique_id=112644632]
+position = Vector2(1203, 323)
+shape = SubResource("RectangleShape2D_nl0t0")
+
+[node name="Obstacle long" parent="." unique_id=1204906185 instance=ExtResource("6_x2odi")]
+position = Vector2(195.00005, 381)
+rotation = 1.5707964
+scale = Vector2(0.16, 0.2)
+
+[node name="Obstacle long2" parent="." unique_id=1390551353 instance=ExtResource("6_x2odi")]
+position = Vector2(356, 266)
+rotation = 1.5707964
+scale = Vector2(0.16, 0.2)
+
+[node name="Obstacle long3" parent="." unique_id=857287928 instance=ExtResource("6_x2odi")]
+position = Vector2(530.99994, 386)
+rotation = 1.5707964
+scale = Vector2(0.16, 0.2)
+
+[node name="Obstacle long4" parent="." unique_id=21694118 instance=ExtResource("6_x2odi")]
+position = Vector2(697.00006, 266.00003)
+rotation = 1.5707964
+scale = Vector2(0.16, 0.2)
+
+[node name="Obstacle long5" parent="." unique_id=1523524188 instance=ExtResource("6_x2odi")]
+position = Vector2(892, 384)
+rotation = 1.5707964
+scale = Vector2(0.16, 0.2)

@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c2er6k8dtctx8" path="res://simple level.png" id="1_bp1i4"]
 [ext_resource type="PackedScene" uid="uid://c0qx2s8ctsoma" path="res://Player block.tscn" id="2_bvvno"]
 [ext_resource type="PackedScene" uid="uid://cphsb1s1oe67r" path="res://goal.tscn" id="3_b4lsh"]
+[ext_resource type="Script" uid="uid://by5lhjhwnm7lx" path="res://goal4.gd" id="4_bvvno"]
 [ext_resource type="PackedScene" uid="uid://d17xlnlyr7nur" path="res://golf_ball.tscn" id="4_yxclo"]
 [ext_resource type="PackedScene" uid="uid://3unh564pt0x" path="res://obstacle_long.tscn" id="5_fx4lf"]
 [ext_resource type="Script" uid="uid://1yv6cj340fne" path="res://obstacle_longlevel4.gd" id="6_sx4db"]
@@ -27,6 +28,7 @@ scale = Vector2(0.8, 0.8)
 
 [node name="Goal" parent="Level1" unique_id=503604563 instance=ExtResource("3_b4lsh")]
 position = Vector2(1055, 283)
+script = ExtResource("4_bvvno")
 
 [node name="Golf ball" parent="Level1" unique_id=966036150 instance=ExtResource("4_yxclo")]
 position = Vector2(244, 291)
