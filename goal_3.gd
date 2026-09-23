@@ -11,6 +11,6 @@ func _on_body_entered(body):
 		#get_tree().current_scene.add_child(label)
 
 		if body.name == "golfball":
-			get_tree().change_scene_to_file("res://level2.tscn")
+			get_tree().change_scene_to_file("res://level4.tscn")
 		if body.name == "Ballbody2d":
-			get_tree().change_scene_to_file("res://level2.tscn")
+			get_tree().change_scene_to_file("res://level4.tscn")
