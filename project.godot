@@ -10,15 +10,10 @@ config_version=5
 
 [application]
 
-config/name="Memoera puistogolf 2"
-run/main_scene="uid://dmmrgs877i88a"
-config/features=PackedStringArray("4.7", "Forward Plus")
+config/name="New Game Project"
+run/main_scene="uid://djf7keuxeyyoh"
+config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
-
-[display]
-
-window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 
 [physics]
 

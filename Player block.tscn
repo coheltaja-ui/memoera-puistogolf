@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c0qx2s8ctsoma"]
 
-[ext_resource type="Texture2D" uid="uid://burt8cttmrna6" path="res://block filled.png" id="1_g27l2"]
+[ext_resource type="Texture2D" uid="uid://burt8cttmrna6" path="res://assets/pictures/block filled.png" id="1_g27l2"]
 [ext_resource type="Script" uid="uid://ccg6aaxntbm7j" path="res://rigid_body_2d.gd" id="1_gyvrd"]
 [ext_resource type="Script" uid="uid://cqe1an8otslyl" path="res://sprite_2d.gd" id="2_q7b2r"]
 

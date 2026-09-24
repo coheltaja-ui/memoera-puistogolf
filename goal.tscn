@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cphsb1s1oe67r"]
 
-[ext_resource type="Texture2D" uid="uid://dsnm4i6tmcx61" path="res://maali.png" id="1_6k3qi"]
+[ext_resource type="Texture2D" uid="uid://dsnm4i6tmcx61" path="res://assets/pictures/maali.png" id="1_6k3qi"]
 [ext_resource type="Script" uid="uid://bbm28elr1l0e1" path="res://goal2.gd" id="1_p20yd"]
 [ext_resource type="Script" uid="uid://jq3xfck8vpxu" path="res://maali.gd" id="3_gcynx"]
 

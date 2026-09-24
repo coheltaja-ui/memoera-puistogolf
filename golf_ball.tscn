@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d17xlnlyr7nur"]
 
 [ext_resource type="Script" uid="uid://blowfd5tsnusn" path="res://ballbody_2d.gd" id="1_0wkuo"]
-[ext_resource type="Texture2D" uid="uid://c3505t4oxuxs1" path="res://Yellow-Circle-No-Background-180x180-1674396641.png" id="1_66s2f"]
+[ext_resource type="Texture2D" uid="uid://c3505t4oxuxs1" path="res://assets/pictures/Yellow-Circle-No-Background-180x180-1674396641.png" id="1_66s2f"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_nl0t0"]
 friction = 0.0

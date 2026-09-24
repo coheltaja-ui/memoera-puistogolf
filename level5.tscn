@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://7xfdu5ui1rnh"]
 
-[ext_resource type="Texture2D" uid="uid://c2er6k8dtctx8" path="res://simple level.png" id="1_qmr0j"]
+[ext_resource type="Texture2D" uid="uid://c2er6k8dtctx8" path="res://assets/pictures/simple level.png" id="1_qmr0j"]
 [ext_resource type="PackedScene" uid="uid://c0qx2s8ctsoma" path="res://Player block.tscn" id="2_x2odi"]
 [ext_resource type="PackedScene" uid="uid://cphsb1s1oe67r" path="res://goal.tscn" id="3_8at3q"]
 [ext_resource type="Script" uid="uid://yncn3q2ifjki" path="res://ballbody_2dlvl5.gd" id="4_87x5k"]
-[ext_resource type="Texture2D" uid="uid://c3505t4oxuxs1" path="res://Yellow-Circle-No-Background-180x180-1674396641.png" id="5_yfwe1"]
+[ext_resource type="Texture2D" uid="uid://c3505t4oxuxs1" path="res://assets/pictures/Yellow-Circle-No-Background-180x180-1674396641.png" id="5_yfwe1"]
 [ext_resource type="PackedScene" uid="uid://3unh564pt0x" path="res://obstacle_long.tscn" id="6_x2odi"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_nl0t0"]

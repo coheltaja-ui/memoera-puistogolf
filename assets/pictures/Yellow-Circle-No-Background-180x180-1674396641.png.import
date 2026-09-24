@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2er6k8dtctx8"
-path="res://.godot/imported/simple level.png-07d8bbc19885637ff1a56f01e29ac3f2.ctex"
+uid="uid://c3505t4oxuxs1"
+path="res://.godot/imported/Yellow-Circle-No-Background-180x180-1674396641.png-35f6c0dd8c96bdc2ece78992f2ea4967.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://simple level.png"
-dest_files=["res://.godot/imported/simple level.png-07d8bbc19885637ff1a56f01e29ac3f2.ctex"]
+source_file="res://assets/pictures/Yellow-Circle-No-Background-180x180-1674396641.png"
+dest_files=["res://.godot/imported/Yellow-Circle-No-Background-180x180-1674396641.png-35f6c0dd8c96bdc2ece78992f2ea4967.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3505t4oxuxs1"
-path="res://.godot/imported/Yellow-Circle-No-Background-180x180-1674396641.png-d7d5d578045d8e108cd824fa80829d40.ctex"
+uid="uid://dsnm4i6tmcx61"
+path="res://.godot/imported/maali.png-c2dcb6816d870dae8cab32b9b833edca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Yellow-Circle-No-Background-180x180-1674396641.png"
-dest_files=["res://.godot/imported/Yellow-Circle-No-Background-180x180-1674396641.png-d7d5d578045d8e108cd824fa80829d40.ctex"]
+source_file="res://assets/pictures/maali.png"
+dest_files=["res://.godot/imported/maali.png-c2dcb6816d870dae8cab32b9b833edca.ctex"]
 
 [params]
 

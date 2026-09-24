@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cghrj34x27hbx"]
 
-[ext_resource type="Texture2D" uid="uid://c2er6k8dtctx8" path="res://simple level.png" id="1_mu84n"]
+[ext_resource type="Texture2D" uid="uid://c2er6k8dtctx8" path="res://assets/pictures/simple level.png" id="1_mu84n"]
 [ext_resource type="PackedScene" uid="uid://c0qx2s8ctsoma" path="res://Player block.tscn" id="2_bmsap"]
 [ext_resource type="Script" uid="uid://crfp5wjv2txml" path="res://goal_3.gd" id="3_bmsap"]
-[ext_resource type="Texture2D" uid="uid://dsnm4i6tmcx61" path="res://maali.png" id="4_8x87a"]
+[ext_resource type="Texture2D" uid="uid://dsnm4i6tmcx61" path="res://assets/pictures/maali.png" id="4_8x87a"]
 [ext_resource type="Script" uid="uid://jq3xfck8vpxu" path="res://maali.gd" id="5_ci4mn"]
 [ext_resource type="PackedScene" uid="uid://d17xlnlyr7nur" path="res://golf_ball.tscn" id="6_sotx7"]
 [ext_resource type="PackedScene" uid="uid://3unh564pt0x" path="res://obstacle_long.tscn" id="7_bmsap"]

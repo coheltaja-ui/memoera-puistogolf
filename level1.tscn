@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dmmrgs877i88a"]
 
 [ext_resource type="PackedScene" uid="uid://c0qx2s8ctsoma" path="res://Player block.tscn" id="1_dopym"]
-[ext_resource type="Texture2D" uid="uid://c2er6k8dtctx8" path="res://simple level.png" id="2_ootpb"]
+[ext_resource type="Texture2D" uid="uid://c2er6k8dtctx8" path="res://assets/pictures/simple level.png" id="2_ootpb"]
 [ext_resource type="PackedScene" uid="uid://d17xlnlyr7nur" path="res://golf_ball.tscn" id="3_ootpb"]
 [ext_resource type="PackedScene" uid="uid://cphsb1s1oe67r" path="res://goal.tscn" id="4_v38iq"]
 

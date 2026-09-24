@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsnm4i6tmcx61"
-path="res://.godot/imported/maali.png-57b3934387366770abd9aa4f054afbb3.ctex"
+uid="uid://burt8cttmrna6"
+path="res://.godot/imported/block filled.png-bc18a3b76d7cb8ec18f5f9a8f033bd1d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://maali.png"
-dest_files=["res://.godot/imported/maali.png-57b3934387366770abd9aa4f054afbb3.ctex"]
+source_file="res://assets/pictures/block filled.png"
+dest_files=["res://.godot/imported/block filled.png-bc18a3b76d7cb8ec18f5f9a8f033bd1d.ctex"]
 
 [params]
 
