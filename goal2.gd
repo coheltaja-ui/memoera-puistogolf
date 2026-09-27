@@ -1,11 +1,16 @@
 extends Area2D
 
+@onready var sound = $goalsound
+
 func _ready():
 	body_entered.connect(_on_body_entered)
 
 func _on_body_entered(body):
 	if body.name == "golfball" or body.name == "Ballbody2d":
-		
+
+		# Play sound
+		sound.play()
+
 		# Remove everything in the current scene
 		for child in get_tree().current_scene.get_children():
 			if child != self:

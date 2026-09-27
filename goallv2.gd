@@ -1,5 +1,5 @@
 extends Area2D
-
+@onready var sound = $goalsound
 var level_complete = false
 
 func _ready():
@@ -11,6 +11,7 @@ func _on_body_entered(body):
 
 	if body.name == "golfball" or body.name == "Ballbody2d":
 		level_complete = true
+		sound.play()
 
 		# Hide everything in the current level
 		for child in get_tree().current_scene.get_children():
