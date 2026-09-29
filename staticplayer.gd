@@ -16,10 +16,3 @@ func _input(event):
 					drag_offset = global_position - get_global_mouse_position()
 		else:
 			dragging = false
-
-func _physics_process(delta):
-	if dragging:
-		var target = get_global_mouse_position() + drag_offset
-		linear_velocity = (target - global_position) * 10.0
-	else:
-		linear_velocity = Vector2.ZERO

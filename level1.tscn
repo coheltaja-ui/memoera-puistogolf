@@ -17,15 +17,16 @@ size = Vector2(128, 636.5)
 position = Vector2(580, 326)
 texture = ExtResource("2_ootpb")
 
+[node name="Golf ball" parent="." unique_id=966036150 instance=ExtResource("3_ootpb")]
+y_sort_enabled = true
+position = Vector2(599, 445)
+
 [node name="PlayerBlock" parent="." unique_id=1755181930 instance=ExtResource("1_dopym")]
-position = Vector2(586, 542)
+position = Vector2(602, 539)
 scale = Vector2(0.8, 0.8)
 
 [node name="Goal" parent="." unique_id=503604563 instance=ExtResource("4_v38iq")]
-position = Vector2(582, 157)
-
-[node name="Golf ball" parent="." unique_id=966036150 instance=ExtResource("3_ootpb")]
-position = Vector2(586, 483)
+position = Vector2(597, 94)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1364144200]
 

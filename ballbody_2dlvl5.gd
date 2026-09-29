@@ -2,7 +2,7 @@ extends RigidBody2D
 
 func _ready():
 	# Set gravity scale for the ball if you want it to fall naturally
-	gravity_scale = 0.05  # Adjust as necessary to match your game's gravity
+	gravity_scale = 0.15  # Adjust as necessary to match your game's gravity
 	
 	# Makes the ball gradually lose momentum
 	linear_damp = 0.5

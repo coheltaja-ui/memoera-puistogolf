@@ -63,7 +63,25 @@ position = Vector2(1203, 323)
 shape = SubResource("RectangleShape2D_nl0t0")
 
 [node name="Obstacle" parent="." unique_id=1906150181 instance=ExtResource("5_r6vdu")]
-position = Vector2(833, 45)
+position = Vector2(1044, 411)
+
+[node name="Obstacle5" parent="." unique_id=63761470 instance=ExtResource("5_r6vdu")]
+position = Vector2(369, 224)
+
+[node name="Obstacle6" parent="." unique_id=1306476534 instance=ExtResource("5_r6vdu")]
+position = Vector2(677, 364)
+
+[node name="Obstacle7" parent="." unique_id=1702945552 instance=ExtResource("5_r6vdu")]
+position = Vector2(493, 319)
+
+[node name="Obstacle8" parent="." unique_id=2127996310 instance=ExtResource("5_r6vdu")]
+position = Vector2(198, 98)
+
+[node name="Obstacle9" parent="." unique_id=1034225750 instance=ExtResource("5_r6vdu")]
+position = Vector2(745, 578)
+
+[node name="Obstacle10" parent="." unique_id=673601115 instance=ExtResource("5_r6vdu")]
+position = Vector2(496, 528)
 
 [node name="Obstacle2" parent="." unique_id=1544602996 instance=ExtResource("5_r6vdu")]
 position = Vector2(908, 120)
