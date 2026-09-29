@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://drnrw38kijxlc"]
+
+[ext_resource type="Texture2D" uid="uid://c2er6k8dtctx8" path="res://assets/pictures/simple level.png" id="1_rr0tx"]
+[ext_resource type="Texture2D" uid="uid://bh0gsqy7vfrvb" path="res://assets/pictures/aloita epli no bg2.png" id="2_6j25d"]
+[ext_resource type="Script" uid="uid://b4idiy3em3yjk" path="res://Startbutton.gd" id="2_ra408"]
+
+[node name="Node2D" type="Node2D" unique_id=1430199823]
+
+[node name="Level1" type="Node2D" parent="." unique_id=216531556]
+
+[node name="Background" type="Sprite2D" parent="Level1" unique_id=621255792]
+position = Vector2(580, 326)
+texture = ExtResource("1_rr0tx")
+
+[node name="Button" type="Button" parent="." unique_id=67813080]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1134294192]
+offset_left = 161.0
+offset_top = 115.0
+offset_right = 1023.0
+offset_bottom = 343.0
+script = ExtResource("2_ra408")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=309634959]
+position = Vector2(589, 223)
+texture = ExtResource("2_6j25d")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=272930772]

@@ -18,7 +18,7 @@ func _on_body_entered(body):
 
 		# Show message
 		var label = Label.new()
-		label.text = "Hyvin menee! :)"
+		label.text = "Hyvin menee!"
 		label.position = Vector2(400, 300)
 		label.add_theme_font_size_override("font_size", 40)
 		get_tree().current_scene.add_child(label)

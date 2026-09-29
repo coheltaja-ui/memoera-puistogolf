@@ -5,12 +5,12 @@ var drag_offset = Vector2.ZERO
 var last_mouse_position = Vector2.ZERO
 var throw_velocity = Vector2.ZERO
 
-@export var throw_strength := 7.0
-@export var max_throw_speed := 500.0
+@export var throw_strength := 10
+@export var max_throw_speed := 800
 
 func _ready():
 	gravity_scale = 0
-	linear_damp = 1.0
+	linear_damp = 0.8
 
 func _input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
