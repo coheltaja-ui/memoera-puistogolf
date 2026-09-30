@@ -22,13 +22,13 @@ size = Vector2(128, 636.5)
 position = Vector2(580, 326)
 texture = ExtResource("1_bp1i4")
 
-[node name="PlayerBlock" parent="Level1" unique_id=1755181930 instance=ExtResource("2_bvvno")]
-position = Vector2(162, 293)
-scale = Vector2(0.8, 0.8)
-
 [node name="Goal" parent="Level1" unique_id=503604563 instance=ExtResource("3_b4lsh")]
 position = Vector2(1055, 283)
 script = ExtResource("4_bvvno")
+
+[node name="PlayerBlock" parent="Level1" unique_id=1755181930 instance=ExtResource("2_bvvno")]
+position = Vector2(162, 293)
+scale = Vector2(0.8, 0.8)
 
 [node name="Golf ball" parent="Level1" unique_id=966036150 instance=ExtResource("4_yxclo")]
 position = Vector2(244, 291)
