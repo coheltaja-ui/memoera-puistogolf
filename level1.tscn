@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dmmrgs877i88a"]
 
 [ext_resource type="PackedScene" uid="uid://c0qx2s8ctsoma" path="res://Player block.tscn" id="1_dopym"]
-[ext_resource type="Texture2D" uid="uid://c2er6k8dtctx8" path="res://assets/pictures/simple level.png" id="2_ootpb"]
+[ext_resource type="Texture2D" uid="uid://bf0jk7luckx14" path="res://assets/pictures/level1.png" id="1_v38iq"]
 [ext_resource type="PackedScene" uid="uid://d17xlnlyr7nur" path="res://golf_ball.tscn" id="3_ootpb"]
 [ext_resource type="PackedScene" uid="uid://cphsb1s1oe67r" path="res://goal.tscn" id="4_v38iq"]
 
@@ -15,7 +15,7 @@ size = Vector2(128, 636.5)
 
 [node name="Background" type="Sprite2D" parent="." unique_id=621255792]
 position = Vector2(580, 326)
-texture = ExtResource("2_ootpb")
+texture = ExtResource("1_v38iq")
 
 [node name="Golf ball" parent="." unique_id=966036150 instance=ExtResource("3_ootpb")]
 y_sort_enabled = true
@@ -26,7 +26,7 @@ position = Vector2(602, 539)
 scale = Vector2(0.8, 0.8)
 
 [node name="Goal" parent="." unique_id=503604563 instance=ExtResource("4_v38iq")]
-position = Vector2(597, 94)
+position = Vector2(595, 113)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1364144200]
 
