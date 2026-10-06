@@ -28,8 +28,9 @@ position = Vector2(599, 445)
 position = Vector2(602, 539)
 scale = Vector2(0.8, 0.8)
 
-[node name="Goal" parent="." unique_id=503604563 instance=ExtResource("4_v38iq")]
+[node name="Goal2" parent="." unique_id=1511073101 instance=ExtResource("4_v38iq")]
 position = Vector2(595, 113)
+
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1364144200]
 
 [node name="Label" type="Label" parent="CanvasLayer" unique_id=959540449]
