@@ -27,4 +27,4 @@ func _on_body_entered(body):
 		await get_tree().create_timer(2.0).timeout
 
 		# Go to level 2
-		get_tree().change_scene_to_file("res://level2.tscn")
+		get_tree().change_scene_to_file("res://level_2.tscn")

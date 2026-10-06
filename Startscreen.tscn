@@ -4,7 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://bh0gsqy7vfrvb" path="res://assets/pictures/aloita epli no bg2.png" id="2_6j25d"]
 [ext_resource type="Script" uid="uid://b4idiy3em3yjk" path="res://Startbutton.gd" id="2_ra408"]
 
-[node name="Node2D" type="Node2D" unique_id=1430199823]
+[node name="Node2D" type="Control" unique_id=2017378979]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Background" type="Sprite2D" parent="." unique_id=621255792]
 position = Vector2(580, 326)
@@ -12,23 +18,23 @@ texture = ExtResource("1_6j25d")
 metadata/_edit_group_ = true
 
 [node name="Menu" type="CenterContainer" parent="." unique_id=2017921330]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -128.0
+offset_bottom = -312.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 6
 size_flags_vertical = 6
 
-[node name="Sprite2D" type="Sprite2D" parent="Menu" unique_id=309634959]
-position = Vector2(575, 328)
-texture = ExtResource("2_6j25d")
-
-[node name="Button" type="Button" parent="Menu" unique_id=67813080]
-layout_mode = 2
-
-[node name="Area2D" type="Area2D" parent="Menu" unique_id=272930772]
-
 [node name="TextureButton" type="TextureButton" parent="Menu" unique_id=1134294192]
 layout_mode = 2
+action_mode = 0
+texture_normal = ExtResource("2_6j25d")
+stretch_mode = 3
 script = ExtResource("2_ra408")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=272930772]
+position = Vector2(-4, -4)
