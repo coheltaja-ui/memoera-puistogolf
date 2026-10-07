@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://lmoaivmm7vkd"]
 
-[ext_resource type="Texture2D" uid="uid://c2er6k8dtctx8" path="res://assets/pictures/simple level.png" id="1_8tcn8"]
+[ext_resource type="Texture2D" uid="uid://cdamgkxulmp0i" path="res://assets/pictures/grass green.png" id="1_21xmu"]
 [ext_resource type="PackedScene" uid="uid://c0qx2s8ctsoma" path="res://Player block.tscn" id="2_r6vdu"]
 [ext_resource type="PackedScene" uid="uid://cphsb1s1oe67r" path="res://goal.tscn" id="3_21xmu"]
 [ext_resource type="PackedScene" uid="uid://d17xlnlyr7nur" path="res://golf_ball.tscn" id="4_8i3m3"]
@@ -17,7 +17,7 @@ size = Vector2(128, 636.5)
 
 [node name="Background" type="Sprite2D" parent="." unique_id=621255792]
 position = Vector2(580, 326)
-texture = ExtResource("1_8tcn8")
+texture = ExtResource("1_21xmu")
 
 [node name="PlayerBlock" parent="." unique_id=1755181930 instance=ExtResource("2_r6vdu")]
 position = Vector2(233.00003, 566)

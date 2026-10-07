@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://csdg5kwjc30i6"]
 
-[ext_resource type="Texture2D" uid="uid://c2er6k8dtctx8" path="res://assets/pictures/simple level.png" id="1_p17iv"]
+[ext_resource type="Texture2D" uid="uid://cdamgkxulmp0i" path="res://assets/pictures/grass green.png" id="1_tccnv"]
 [ext_resource type="PackedScene" uid="uid://tnhsiofb72sh" path="res://hinged_door.tscn" id="2_tvfmm"]
 [ext_resource type="PackedScene" uid="uid://c0qx2s8ctsoma" path="res://Player block.tscn" id="3_drg3s"]
 [ext_resource type="PackedScene" uid="uid://d17xlnlyr7nur" path="res://golf_ball.tscn" id="4_k25ql"]
@@ -109,10 +109,10 @@ sources/8 = SubResource("TileSetAtlasSource_65qac")
 
 [node name="Background" type="Sprite2D" parent="Level2" unique_id=621255792]
 position = Vector2(580, 326)
-texture = ExtResource("1_p17iv")
+texture = ExtResource("1_tccnv")
 
-[node name="Hinged door" parent="Level2/Background" unique_id=1285417665 instance=ExtResource("2_tvfmm")]
-position = Vector2(-820, -306)
+[node name="Hinged door" parent="Level2" unique_id=1285417665 instance=ExtResource("2_tvfmm")]
+position = Vector2(-240, 20)
 
 [node name="PlayerBlock" parent="Level2" unique_id=1755181930 instance=ExtResource("3_drg3s")]
 position = Vector2(233.00003, 566)

@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://7xfdu5ui1rnh"]
 
-[ext_resource type="Texture2D" uid="uid://c2er6k8dtctx8" path="res://assets/pictures/simple level.png" id="1_qmr0j"]
+[ext_resource type="Texture2D" uid="uid://cdamgkxulmp0i" path="res://assets/pictures/grass green.png" id="1_vueak"]
 [ext_resource type="PackedScene" uid="uid://c0qx2s8ctsoma" path="res://Player block.tscn" id="2_x2odi"]
 [ext_resource type="PackedScene" uid="uid://cphsb1s1oe67r" path="res://goal.tscn" id="3_8at3q"]
 [ext_resource type="Script" uid="uid://gf3pf5n0aqab" path="res://goal5.gd" id="4_8at3q"]
@@ -119,7 +119,7 @@ sources/8 = SubResource("TileSetAtlasSource_s3r6a")
 
 [node name="Background" type="Sprite2D" parent="Level1" unique_id=621255792]
 position = Vector2(580, 326)
-texture = ExtResource("1_qmr0j")
+texture = ExtResource("1_vueak")
 
 [node name="Goal" parent="Level1" unique_id=503604563 instance=ExtResource("3_8at3q")]
 position = Vector2(1102, 593)

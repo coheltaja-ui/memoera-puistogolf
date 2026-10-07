@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d17xlnlyr7nur"]
 
 [ext_resource type="Script" uid="uid://blowfd5tsnusn" path="res://ballbody_2d.gd" id="1_0wkuo"]
-[ext_resource type="Texture2D" uid="uid://c3505t4oxuxs1" path="res://assets/pictures/Yellow-Circle-No-Background-180x180-1674396641.png" id="1_66s2f"]
+[ext_resource type="Texture2D" uid="uid://84k6wvvr42x2" path="res://assets/pictures/white ball.png" id="2_0wkuo"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_nl0t0"]
 friction = 0.0
@@ -18,7 +18,7 @@ script = ExtResource("1_0wkuo")
 
 [node name="Sprite2D" type="Sprite2D" parent="Ballbody2d" unique_id=1890297853]
 scale = Vector2(0.21111111, 0.21111111)
-texture = ExtResource("1_66s2f")
+texture = ExtResource("2_0wkuo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ballbody2d" unique_id=1322776400]
 shape = SubResource("CircleShape2D_nl0t0")

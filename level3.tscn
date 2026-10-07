@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://cghrj34x27hbx"]
 
-[ext_resource type="Texture2D" uid="uid://c2er6k8dtctx8" path="res://assets/pictures/simple level.png" id="1_mu84n"]
+[ext_resource type="Texture2D" uid="uid://cdamgkxulmp0i" path="res://assets/pictures/grass green.png" id="1_0m7xm"]
 [ext_resource type="PackedScene" uid="uid://c0qx2s8ctsoma" path="res://Player block.tscn" id="2_bmsap"]
 [ext_resource type="Script" uid="uid://crfp5wjv2txml" path="res://goal_3.gd" id="3_bmsap"]
 [ext_resource type="Texture2D" uid="uid://dsnm4i6tmcx61" path="res://assets/pictures/maali.png" id="4_8x87a"]
@@ -111,7 +111,7 @@ sources/8 = SubResource("TileSetAtlasSource_kgaxw")
 
 [node name="Background" type="Sprite2D" parent="Level1" unique_id=621255792]
 position = Vector2(580, 326)
-texture = ExtResource("1_mu84n")
+texture = ExtResource("1_0m7xm")
 
 [node name="Goal3" type="Area2D" parent="Level1" unique_id=503604563]
 position = Vector2(582, 157)
