@@ -12,7 +12,7 @@ config_version=5
 
 config/name="New Game Project"
 run/main_scene="uid://drnrw38kijxlc"
-config/features=PackedStringArray("4.6", "Forward Plus")
+config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
 [physics]
