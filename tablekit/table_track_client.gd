@@ -277,7 +277,8 @@ func _drag_held() -> void:
 
 func _mouse_nx_ny() -> Vector2:
 	var pos := get_viewport().get_mouse_position()
-	var size := Vector2(window_size)
+	# Use the game's own view size so the simulated block lands under the mouse.
+	var size := get_viewport().get_visible_rect().size
 	if size.x < 1.0 or size.y < 1.0:
 		size = Vector2(960, 640)
 	return Vector2(clampf(pos.x / size.x, 0.0, 1.0), clampf(pos.y / size.y, 0.0, 1.0))

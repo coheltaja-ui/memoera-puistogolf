@@ -6,6 +6,9 @@ func _ready():
 	
 	# Makes the ball gradually lose momentum
 	linear_damp = 0.5
+
+	# Keeps fast hits from the block from tunnelling through the ball.
+	continuous_cd = RigidBody2D.CCD_MODE_CAST_SHAPE
 	
 func _on_Ball_body_entered(body):
 	# Check if the body it collides with is the block

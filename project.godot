@@ -15,6 +15,11 @@ run/main_scene="uid://drnrw38kijxlc"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+TrackerBoot="*res://tablekit/tracker_boot.gd"
+TableTrack="*res://tablekit/table_track_client.gd"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
