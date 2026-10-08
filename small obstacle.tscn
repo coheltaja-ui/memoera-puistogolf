@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://0b0pomyibr5m"]
+
+[ext_resource type="Script" uid="uid://bk1ejqjta81ia" path="res://rigidobs.gd" id="1_85yo4"]
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="2_hrj66"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1t5yn"]
+size = Vector2(44, 42)
+
+[node name="Node2D" type="Node2D" unique_id=1425704903]
+
+[node name="Rigidobs" type="RigidBody2D" parent="." unique_id=2139495097]
+position = Vector2(-0.5, 0.5)
+script = ExtResource("1_85yo4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rigidobs" unique_id=950839937]
+position = Vector2(0.5, -1)
+scale = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_1t5yn")
+
+[node name="Sprite2D" type="Sprite2D" parent="Rigidobs" unique_id=1370280842]
+position = Vector2(0.5, -1.5)
+scale = Vector2(0.17968747, 0.17968747)
+texture = ExtResource("2_hrj66")

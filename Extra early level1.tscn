@@ -1,0 +1,208 @@
+[gd_scene format=4 uid="uid://csdg5kwjc30i6"]
+
+[ext_resource type="Texture2D" uid="uid://c2er6k8dtctx8" path="res://assets/pictures/simple level.png" id="1_p17iv"]
+[ext_resource type="PackedScene" uid="uid://tnhsiofb72sh" path="res://hinged_door.tscn" id="2_tvfmm"]
+[ext_resource type="PackedScene" uid="uid://c0qx2s8ctsoma" path="res://Player block.tscn" id="3_drg3s"]
+[ext_resource type="PackedScene" uid="uid://d17xlnlyr7nur" path="res://golf_ball.tscn" id="4_k25ql"]
+[ext_resource type="PackedScene" uid="uid://cphsb1s1oe67r" path="res://goal.tscn" id="5_x3g4o"]
+[ext_resource type="Script" uid="uid://c0jdqhf4np3a1" path="res://goallv2.gd" id="6_n1d41"]
+[ext_resource type="Texture2D" uid="uid://ba13gmfvf0hi3" path="res://assets/Tilemapping/bush1.png" id="7_33ddd"]
+[ext_resource type="Texture2D" uid="uid://c833cpw6hwv8u" path="res://assets/Tilemapping/dirt1.png" id="8_tccnv"]
+[ext_resource type="Texture2D" uid="uid://dggwmmtukkits" path="res://assets/Tilemapping/dirtpath1.png" id="9_mhwwx"]
+[ext_resource type="Texture2D" uid="uid://bvh8gpq23qj6x" path="res://assets/Tilemapping/dirtpath2.png" id="10_b5j27"]
+[ext_resource type="Texture2D" uid="uid://dl5no5c3mrrib" path="res://assets/Tilemapping/dirtpath3.png" id="11_gdosp"]
+[ext_resource type="Texture2D" uid="uid://djrolho2dp2ur" path="res://assets/Tilemapping/garass1.png" id="12_tsw6k"]
+[ext_resource type="Texture2D" uid="uid://pt5mejnaaq05" path="res://assets/Tilemapping/stone1.png" id="13_binr2"]
+[ext_resource type="Texture2D" uid="uid://to6xsaghtyam" path="res://assets/Tilemapping/tree1.png" id="14_m3glc"]
+[ext_resource type="Texture2D" uid="uid://bmw1sgb5a3wkx" path="res://assets/Tilemapping/water1.png" id="15_u5q5u"]
+[ext_resource type="PackedScene" uid="uid://0b0pomyibr5m" path="res://small obstacle.tscn" id="16_tccnv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5wlxq"]
+size = Vector2(1375, 101.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gdosp"]
+size = Vector2(128, 636.5)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_77xrh"]
+texture = ExtResource("7_33ddd")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qqs36"]
+texture = ExtResource("8_tccnv")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tkw2l"]
+texture = ExtResource("9_mhwwx")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_phxr5"]
+texture = ExtResource("10_b5j27")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ays8g"]
+texture = ExtResource("11_gdosp")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_paf3j"]
+texture = ExtResource("12_tsw6k")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vwpc2"]
+texture = ExtResource("13_binr2")
+0:0/0 = 0
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3udyf"]
+texture = ExtResource("14_m3glc")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_65qac"]
+texture = ExtResource("15_u5q5u")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_ijidc"]
+physics_layer_0/collision_layer = 1
+physics_layer_1/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_77xrh")
+sources/1 = SubResource("TileSetAtlasSource_qqs36")
+sources/2 = SubResource("TileSetAtlasSource_tkw2l")
+sources/3 = SubResource("TileSetAtlasSource_phxr5")
+sources/4 = SubResource("TileSetAtlasSource_ays8g")
+sources/5 = SubResource("TileSetAtlasSource_paf3j")
+sources/6 = SubResource("TileSetAtlasSource_vwpc2")
+sources/7 = SubResource("TileSetAtlasSource_3udyf")
+sources/8 = SubResource("TileSetAtlasSource_65qac")
+
+[node name="Node2D" type="Node2D" unique_id=1656608124]
+
+[node name="Level2" type="Node2D" parent="." unique_id=859049185]
+
+[node name="Background" type="Sprite2D" parent="Level2" unique_id=621255792]
+position = Vector2(580, 326)
+texture = ExtResource("1_p17iv")
+
+[node name="Hinged door" parent="Level2/Background" unique_id=1285417665 instance=ExtResource("2_tvfmm")]
+position = Vector2(-820, -306)
+
+[node name="PlayerBlock" parent="Level2" unique_id=1755181930 instance=ExtResource("3_drg3s")]
+position = Vector2(233.00003, 566)
+scale = Vector2(0.8, 0.8)
+
+[node name="Golf ball" parent="Level2" unique_id=966036150 instance=ExtResource("4_k25ql")]
+position = Vector2(502, 416)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Level2" unique_id=1364144200]
+
+[node name="Label" type="Label" parent="Level2/CanvasLayer" unique_id=959540449]
+visible = false
+offset_left = 234.0
+offset_top = 182.0
+offset_right = 938.0
+offset_bottom = 365.0
+text = "Onnittelut"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Level2" unique_id=228635236]
+
+[node name="cornerblockerr up down2" type="CollisionShape2D" parent="Level2/StaticBody2D" unique_id=1600566571]
+position = Vector2(579.5, 684.375)
+shape = SubResource("RectangleShape2D_5wlxq")
+
+[node name="Cornerblocker" type="CollisionShape2D" parent="Level2/StaticBody2D" unique_id=2058808820]
+position = Vector2(-45, 329)
+shape = SubResource("RectangleShape2D_gdosp")
+
+[node name="cornerblockerr up down" type="CollisionShape2D" parent="Level2/StaticBody2D" unique_id=317606212]
+position = Vector2(579, -36)
+shape = SubResource("RectangleShape2D_5wlxq")
+
+[node name="Cornerblocker2" type="CollisionShape2D" parent="Level2/StaticBody2D" unique_id=112644632]
+position = Vector2(1203, 323)
+shape = SubResource("RectangleShape2D_gdosp")
+
+[node name="Goal2" parent="Level2" unique_id=503604563 instance=ExtResource("5_x3g4o")]
+position = Vector2(855, 60)
+script = ExtResource("6_n1d41")
+
+[node name="Collision tilemap" type="TileMapLayer" parent="." unique_id=2088965011]
+tile_map_data = PackedByteArray("AAABABQABgAAAAAAAAABABUABgAAAAEAAAACABQABgABAAAAAAACABUABgABAAEAAAADABQABgAAAAAAAAADABUABgAAAAEAAAAEABQABgABAAAAAAAEABUABgABAAEAAAAFABQABgAAAAAAAAAFABUABgAAAAEAAAAGABQABgABAAAAAAAGABUABgABAAEAAAAHABQABgAAAAAAAAAHABUABgAAAAEAAAAIABQABgABAAAAAAAIABUABgABAAEAAAAJABQABgAAAAAAAAAJABUABgAAAAEAAAAKABQABgABAAAAAAAKABUABgABAAEAAAALABQABgAAAAAAAAALABUABgAAAAEAAAAMABQABgABAAAAAAAMABUABgABAAEAAAANABQABgAAAAAAAAANABUABgAAAAEAAAAOABQABgABAAAAAAAOABUABgABAAEAAAAPABQABgAAAAAAAAAPABUABgAAAAEAAAAQABQABgABAAAAAAAQABUABgABAAEAAAARABQABgAAAAAAAAARABUABgAAAAEAAAASABQABgABAAAAAAASABUABgABAAEAAAATABQABgAAAAAAAAATABUABgAAAAEAAAAUABQABgABAAAAAAAUABUABgABAAEAAAAVABQABgAAAAAAAAAVABUABgAAAAEAAAAWABQABgABAAAAAAAWABUABgABAAEAAAAXABQABgAAAAAAAAAXABUABgAAAAEAAAAYABQABgABAAAAAAAYABUABgABAAEAAAA2ABQABgAAAAAAAAA2ABUABgAAAAEAAAA3ABQABgABAAAAAAA3ABUABgABAAEAAAA4ABQABgAAAAAAAAA4ABUABgAAAAEAAAA5ABQABgABAAAAAAA5ABUABgABAAEAAAA6ABQABgAAAAAAAAA6ABUABgAAAAEAAAA7ABQABgABAAAAAAA7ABUABgABAAEAAAA8ABQABgAAAAAAAAA8ABUABgAAAAEAAAA9ABQABgABAAAAAAA9ABUABgABAAEAAAA+ABQABgAAAAAAAAA+ABUABgAAAAEAAAA/ABQABgABAAAAAAA/ABUABgABAAEAAABAABQABgAAAAAAAABAABUABgAAAAEAAABBABQABgABAAAAAABBABUABgABAAEAAABCABQABgAAAAAAAABCABUABgAAAAEAAABDABQABgABAAAAAABDABUABgABAAEAAABEABQABgAAAAAAAABEABUABgAAAAEAAABFABQABgABAAAAAABFABUABgABAAEAAABGABQABgAAAAAAAABGABUABgAAAAEAAABHABQABgABAAAAAABHABUABgABAAEAAAA=")
+tile_set = SubResource("TileSet_ijidc")
+
+[node name="Node2D" parent="." unique_id=1425704903 instance=ExtResource("16_tccnv")]
+position = Vector2(845, 427)
+
+[node name="Node2D11" parent="." unique_id=948405655 instance=ExtResource("16_tccnv")]
+position = Vector2(801, 464)
+
+[node name="Node2D12" parent="." unique_id=320258758 instance=ExtResource("16_tccnv")]
+position = Vector2(393, 428)
+
+[node name="Node2D13" parent="." unique_id=2014881807 instance=ExtResource("16_tccnv")]
+position = Vector2(594, 426)
+
+[node name="Node2D14" parent="." unique_id=918430722 instance=ExtResource("16_tccnv")]
+position = Vector2(521, 468)
+
+[node name="Node2D15" parent="." unique_id=1895488063 instance=ExtResource("16_tccnv")]
+position = Vector2(662, 488)
+
+[node name="Node2D16" parent="." unique_id=98258089 instance=ExtResource("16_tccnv")]
+position = Vector2(441, 497)
+
+[node name="Node2D2" parent="." unique_id=1500013099 instance=ExtResource("16_tccnv")]
+position = Vector2(794, 301)
+
+[node name="Node2D3" parent="." unique_id=639622834 instance=ExtResource("16_tccnv")]
+position = Vector2(620, 287)
+
+[node name="Node2D4" parent="." unique_id=1897218131 instance=ExtResource("16_tccnv")]
+position = Vector2(452, 267)
+
+[node name="Node2D5" parent="." unique_id=1571116289 instance=ExtResource("16_tccnv")]
+position = Vector2(685, 272)
+
+[node name="Node2D6" parent="." unique_id=68834689 instance=ExtResource("16_tccnv")]
+position = Vector2(653, 194)
+
+[node name="Node2D7" parent="." unique_id=1205779126 instance=ExtResource("16_tccnv")]
+position = Vector2(561, 166)
+
+[node name="Node2D8" parent="." unique_id=1284979506 instance=ExtResource("16_tccnv")]
+position = Vector2(716, 237)
+
+[node name="Node2D9" parent="." unique_id=992620637 instance=ExtResource("16_tccnv")]
+position = Vector2(510, 223)
+
+[node name="Node2D10" parent="." unique_id=904187620 instance=ExtResource("16_tccnv")]
+position = Vector2(767, 240)
