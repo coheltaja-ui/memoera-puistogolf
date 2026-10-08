@@ -37,4 +37,4 @@ stretch_mode = 3
 script = ExtResource("2_ra408")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=272930772]
-position = Vector2(-4, -4)
+position = Vector2(515, 166)
