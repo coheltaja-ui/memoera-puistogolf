@@ -17,9 +17,6 @@ size = Vector2(128, 636.5)
 position = Vector2(580, 326)
 texture = ExtResource("1_v38iq")
 
-[node name="Goal" parent="." unique_id=503604563 instance=ExtResource("4_v38iq")]
-position = Vector2(597, 94)
-
 [node name="Golf ball" parent="." unique_id=966036150 instance=ExtResource("3_ootpb")]
 y_sort_enabled = true
 position = Vector2(599, 445)
