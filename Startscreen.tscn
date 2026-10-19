@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://drnrw38kijxlc"]
 
-[ext_resource type="Texture2D" uid="uid://do1ue42uur84u" path="res://assets/pictures/startscreen.png" id="1_6j25d"]
+[ext_resource type="Texture2D" uid="uid://cdamgkxulmp0i" path="res://assets/pictures/grass green.png" id="1_6j25d"]
 [ext_resource type="Texture2D" uid="uid://bh0gsqy7vfrvb" path="res://assets/pictures/aloita epli no bg2.png" id="2_6j25d"]
 [ext_resource type="Script" uid="uid://b4idiy3em3yjk" path="res://Startbutton.gd" id="2_ra408"]
 
