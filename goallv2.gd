@@ -25,7 +25,7 @@ func _on_body_entered(body):
 		# Create the message
 		var label = Label.new()
 		label.text = "Mahtavaa!"
-		label.position = Vector2(400, 300)
+		label.position = Vector2(450, 300)
 		label.add_theme_font_size_override("font_size", 40)
 		canvas_layer.add_child(label)
 
@@ -33,4 +33,4 @@ func _on_body_entered(body):
 		await get_tree().create_timer(2.0).timeout
 
 		# Go to level 3
-		get_tree().change_scene_to_file("res://level3.tscn")
+		get_tree().change_scene_to_file("res://Extra early level1.tscn")

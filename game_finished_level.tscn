@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://c2u0npe787qoo"]
+
+[ext_resource type="Texture2D" uid="uid://b6qlljf1e443u" path="res://assets/pictures/arturo_anez-golf-9597898.jpg" id="1_a4nsg"]
+[ext_resource type="PackedScene" uid="uid://c0qx2s8ctsoma" path="res://Player block.tscn" id="2_undpw"]
+[ext_resource type="PackedScene" uid="uid://d17xlnlyr7nur" path="res://golf_ball.tscn" id="3_0qlvt"]
+[ext_resource type="PackedScene" uid="uid://cphsb1s1oe67r" path="res://goal.tscn" id="4_1k7q2"]
+[ext_resource type="Script" uid="uid://bmcsifg81khs7" path="res://gamefinishedloop.gd" id="5_a4nsg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5wlxq"]
+size = Vector2(1375, 101.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nl0t0"]
+size = Vector2(128, 636.5)
+
+[node name="Game finished level" type="Node2D" unique_id=764488472]
+
+[node name="Level2" type="Node2D" parent="." unique_id=859049185]
+
+[node name="Background" type="Sprite2D" parent="Level2" unique_id=621255792]
+position = Vector2(586, 290)
+scale = Vector2(0.20794445, 0.20794442)
+texture = ExtResource("1_a4nsg")
+
+[node name="PlayerBlock" parent="Level2" unique_id=1755181930 instance=ExtResource("2_undpw")]
+position = Vector2(233.00003, 566)
+scale = Vector2(0.8, 0.8)
+
+[node name="Golf ball" parent="Level2" unique_id=966036150 instance=ExtResource("3_0qlvt")]
+position = Vector2(596, 367)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Level2" unique_id=1364144200]
+
+[node name="Label" type="Label" parent="Level2/CanvasLayer" unique_id=959540449]
+visible = false
+offset_left = 234.0
+offset_top = 182.0
+offset_right = 938.0
+offset_bottom = 365.0
+text = "Onnittelut"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Level2" unique_id=228635236]
+
+[node name="cornerblockerr up down2" type="CollisionShape2D" parent="Level2/StaticBody2D" unique_id=1600566571]
+position = Vector2(579.5, 684.375)
+shape = SubResource("RectangleShape2D_5wlxq")
+
+[node name="Label" type="Label" parent="Level2/StaticBody2D/cornerblockerr up down2" unique_id=120127989]
+offset_left = -674.5
+offset_top = -831.375
+offset_right = 683.71313
+offset_bottom = -32.373047
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 46
+text = "Onnittelut!
+Pääsit pelin loppuun!"
+horizontal_alignment = 1
+vertical_alignment = 1
+max_lines_visible = 4
+
+[node name="Cornerblocker" type="CollisionShape2D" parent="Level2/StaticBody2D" unique_id=2058808820]
+position = Vector2(-45, 329)
+shape = SubResource("RectangleShape2D_nl0t0")
+
+[node name="cornerblockerr up down" type="CollisionShape2D" parent="Level2/StaticBody2D" unique_id=317606212]
+position = Vector2(579, -36)
+shape = SubResource("RectangleShape2D_5wlxq")
+
+[node name="Cornerblocker2" type="CollisionShape2D" parent="Level2/StaticBody2D" unique_id=112644632]
+position = Vector2(1203, 323)
+shape = SubResource("RectangleShape2D_nl0t0")
+
+[node name="Goal2" parent="Level2" unique_id=503604563 instance=ExtResource("4_1k7q2")]
+position = Vector2(835, 116)
+script = ExtResource("5_a4nsg")

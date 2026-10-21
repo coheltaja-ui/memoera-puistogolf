@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://crfp5wjv2txml" path="res://goal_3.gd" id="3_bmsap"]
 [ext_resource type="Texture2D" uid="uid://dsnm4i6tmcx61" path="res://assets/pictures/maali.png" id="4_8x87a"]
 [ext_resource type="Script" uid="uid://jq3xfck8vpxu" path="res://maali.gd" id="5_ci4mn"]
+[ext_resource type="AudioStream" uid="uid://o8k1gqak6ggn" path="res://assets/audio/freesound_community-tada-fanfare-a-6313.mp3" id="5_qoi87"]
 [ext_resource type="PackedScene" uid="uid://d17xlnlyr7nur" path="res://golf_ball.tscn" id="6_sotx7"]
 [ext_resource type="Texture2D" uid="uid://ba13gmfvf0hi3" path="res://assets/Tilemapping/bush1.png" id="7_0m7xm"]
 [ext_resource type="Texture2D" uid="uid://c833cpw6hwv8u" path="res://assets/Tilemapping/dirt1.png" id="8_qoi87"]
@@ -127,6 +128,9 @@ position = Vector2(-436, -97)
 scale = Vector2(0.04843765, 0.04843765)
 texture = ExtResource("4_8x87a")
 script = ExtResource("5_ci4mn")
+
+[node name="goalsound" type="AudioStreamPlayer2D" parent="Level1/Goal3" unique_id=1621399355]
+stream = ExtResource("5_qoi87")
 
 [node name="PlayerBlock" parent="Level1" unique_id=1755181930 instance=ExtResource("2_bmsap")]
 position = Vector2(586, 542)

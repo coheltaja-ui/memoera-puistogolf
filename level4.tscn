@@ -2,11 +2,16 @@
 
 [ext_resource type="Texture2D" uid="uid://cdamgkxulmp0i" path="res://assets/pictures/grass green.png" id="1_bvvno"]
 [ext_resource type="PackedScene" uid="uid://c0qx2s8ctsoma" path="res://Player block.tscn" id="2_bvvno"]
-[ext_resource type="PackedScene" uid="uid://cphsb1s1oe67r" path="res://goal.tscn" id="3_b4lsh"]
+[ext_resource type="Texture2D" uid="uid://dsnm4i6tmcx61" path="res://assets/pictures/maali.png" id="3_yxclo"]
 [ext_resource type="Script" uid="uid://by5lhjhwnm7lx" path="res://goal4.gd" id="4_bvvno"]
+[ext_resource type="Script" uid="uid://jq3xfck8vpxu" path="res://maali.gd" id="4_fx4lf"]
 [ext_resource type="PackedScene" uid="uid://d17xlnlyr7nur" path="res://golf_ball.tscn" id="4_yxclo"]
 [ext_resource type="PackedScene" uid="uid://3unh564pt0x" path="res://obstacle_long.tscn" id="5_fx4lf"]
+[ext_resource type="AudioStream" uid="uid://o8k1gqak6ggn" path="res://assets/audio/freesound_community-tada-fanfare-a-6313.mp3" id="5_sx4db"]
 [ext_resource type="Script" uid="uid://1yv6cj340fne" path="res://obstacle_longlevel4.gd" id="6_sx4db"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nl0t0"]
+radius = 557.4199
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5wlxq"]
 size = Vector2(1375, 101.25)
@@ -22,9 +27,22 @@ size = Vector2(128, 636.5)
 position = Vector2(580, 326)
 texture = ExtResource("1_bvvno")
 
-[node name="Goal" parent="Level1" unique_id=503604563 instance=ExtResource("3_b4lsh")]
+[node name="Goal" type="Area2D" parent="Level1" unique_id=503604563]
 position = Vector2(1055, 283)
 script = ExtResource("4_bvvno")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level1/Goal" unique_id=603225049]
+position = Vector2(3.8146973e-06, 0)
+scale = Vector2(0.04843765, 0.04843765)
+shape = SubResource("CircleShape2D_nl0t0")
+
+[node name="Maali" type="Sprite2D" parent="Level1/Goal" unique_id=2093008066]
+scale = Vector2(0.04843765, 0.04843765)
+texture = ExtResource("3_yxclo")
+script = ExtResource("4_fx4lf")
+
+[node name="goalsound" type="AudioStreamPlayer2D" parent="Level1/Goal" unique_id=776650910]
+stream = ExtResource("5_sx4db")
 
 [node name="PlayerBlock" parent="Level1" unique_id=1755181930 instance=ExtResource("2_bvvno")]
 position = Vector2(162, 293)
